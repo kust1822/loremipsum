@@ -1,0 +1,209 @@
+header {
+    position: relative;
+    background: center no-repeat url("../assets/img/background-head.jpg");
+    background-size: auto 100%;
+}
+
+.header {
+    &__top {
+        background: rgba(16, 16, 29, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    &__top-wrap {
+        max-width: 1290px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 3.75rem;
+        box-sizing: border-box;
+
+        @include respond-to(mobile) {
+            padding: 2rem 2.75rem;
+        }
+    }
+
+    &__content {
+        max-width: 1290px;
+        margin: 0 auto;
+        padding: 12.7rem 3.75rem 12.7rem;
+        box-sizing: border-box;
+        color: $color-secondary;
+
+        h1 {
+            max-width: 48.75rem;
+        }
+
+        @include respond-to(tablet) {
+            padding-bottom: 8.7rem;
+        }
+
+        @include respond-to(mobile) {
+            padding: 10rem 2.75rem 5.7rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+
+        &-title {
+            font-weight: bold;
+            margin-bottom: 0.6rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.6rem;
+            margin-bottom: 0.3rem;
+
+            &::before {
+                content: "-";
+                position: absolute;
+                top: 0.001rem;
+                left: 0;
+            }
+        }
+
+        @include respond-to(tablet) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+    }
+}
+
+.logo {
+    padding-right: 3.75rem;
+    max-width: 15.4rem;
+
+    @include respond-to(mobile) {
+        padding-right: 0;
+    }
+}
+
+.navigation {
+    ul {
+        display: flex;
+        gap: 0 3.75rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    @include respond-to(mobile) {
+        display: none;
+    }
+}
+
+.menu {
+    &__burger {
+        display: none;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+
+        &::before,
+        &::after {
+            content: "";
+            left: 0;
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 10px;
+            background: $color-light;
+        }
+
+        &::before {
+            top: 0;
+            box-shadow: 0 11px 0 $color-light;
+            transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+        }
+
+        &::after {
+            bottom: 0;
+            transition: bottom 0.3s 0.15s, transform 0.3s;
+        }
+
+        @include respond-to(mobile) {
+            display: block;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + .menu__burger::before {
+            top: 11px;
+            transform: rotate(45deg);
+            box-shadow: 0 0 0 $color-light;
+            transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+        }
+
+        &:checked + .menu__burger::after {
+            bottom: 11px;
+            transform: rotate(-45deg);
+            transition: bottom 0.3s, transform 0.3s 0.15s;
+        }
+
+        &:checked ~ .menu__list {
+            transform: translateX(0);
+            border-bottom: 2px solid #286690;
+            box-shadow: 0 0 20px 3px #286690;
+        }
+    }
+
+    &__list {
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: grid;
+        padding: 5rem 0;
+        margin: 0;
+        background: $background;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        width: 100%;
+    }
+
+    &__item {
+        display: block;
+        padding: 8px;
+        color: $color-light;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
