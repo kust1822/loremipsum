@@ -1,0 +1,117 @@
+header {
+    position: relative;
+    background: center no-repeat url("../assets/img/background-head.jpg");
+    background-size: auto 100%;
+}
+
+.header {
+    &__top {
+        background: rgba(16, 16, 29, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    &__top-wrap {
+        max-width: 1290px;
+        margin: 0 auto;
+        gap: 3.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 3.75rem;
+        box-sizing: border-box;
+
+        @include respond-to(mobile) {
+            padding: 2rem 2.75rem;
+        }
+    }
+
+    &__content {
+        max-width: 1290px;
+        margin: 0 auto;
+        padding: 12.7rem 3.75rem 12.7rem;
+        box-sizing: border-box;
+        color: $color-secondary;
+
+        h1 {
+            max-width: 48.75rem;
+        }
+
+        @include respond-to(tablet) {
+            padding-bottom: 8.7rem;
+        }
+
+        @include respond-to(mobile) {
+            padding: 10rem 2.75rem 5.7rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+
+        &-title {
+            font-weight: bold;
+            margin-bottom: 0.6rem;
+        }
+
+        @include respond-to(tablet) {
+            margin-bottom: 4rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 1.6rem;
+        margin-bottom: 0.3rem;
+
+        &::before {
+            content: "-";
+            position: absolute;
+            top: 0.001rem;
+            left: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.logo {
+    max-width: 15.4rem;
+}
+
+.navigation {
+    &__list {
+        display: flex;
+        gap: 0 3.75rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    @include respond-to(mobile) {
+        display: none;
+    }
+}

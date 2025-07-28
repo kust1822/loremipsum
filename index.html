@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="src/css/main.css" />
+        <script src="src/js/main.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Тест</title>
+    </head>
+    <body>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            display="none"
+        >
+            <symbol id="icon-email" viewBox="0 0 34 32">
+                <path
+                    d="M26.8 23.76c-0.007 0.233-0.194 0.42-0.427 0.427h-19.717c-0.234-0.006-0.423-0.194-0.429-0.428v-10.285c0.282 0.32 0.59 0.616 0.925 0.883 1.915 1.472 3.843 2.973 5.706 4.528 1.003 0.843 2.25 1.874 3.642 1.874h0.027c1.392 0 2.64-1.030 3.643-1.875 1.526-1.275 3.383-2.758 5.269-4.205l0.437-0.322c0.334-0.267 0.643-0.563 0.923-0.883v10.285zM26.8 9.683c0 1.138-1.098 2.624-1.968 3.307-3.505 2.717-5.253 4.108-6.995 5.506l1.624-1.26c-0.709 0.576-1.995 1.808-2.933 1.808h-0.027c-0.938 0-2.224-1.232-2.933-1.808-0.119-0.138-1.866-1.529-3.619-2.914l-1.75-1.333c-1.206-0.95-1.968-2.277-1.968-3.803 0-0.227 0.2-0.429 0.427-0.429h19.715c0.509 0 0.427 0.589 0.427 0.925zM28.515 9.187c0-1.179-0.965-2.144-2.144-2.144h-19.71c-1.181 0-2.144 0.965-2.144 2.144v14.571c0 1.179 0.963 2.144 2.144 2.144h19.712c1.179 0 2.144-0.965 2.144-2.144v-14.571z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-vk" viewBox="0 0 34 32">
+                <path
+                    d="M24.288 19.658c0 1.040-0.197 1.955-0.59 2.742s-0.923 1.44-1.589 1.955c-0.735 0.586-1.603 1.040-2.55 1.309l-0.052 0.013c-0.938 0.262-2.133 0.394-3.586 0.394h-8.381v-20.939h7.397c1.536 0 2.699 0.061 3.488 0.182 0.795 0.112 1.541 0.357 2.235 0.731 0.75 0.403 1.307 0.944 1.674 1.618 0.374 0.675 0.562 1.453 0.562 2.336 0 1.021-0.256 1.93-0.773 2.726-0.503 0.788-1.226 1.396-2.081 1.748l-0.030 0.011v0.112c1.296 0.272 2.331 0.83 3.109 1.674 0.778 0.835 1.168 1.965 1.168 3.389zM17.552 11.051c0-0.336-0.088-0.683-0.267-1.040-0.164-0.349-0.444-0.621-0.79-0.769l-0.010-0.004c-0.364-0.152-0.786-0.24-1.229-0.24-0.003 0-0.007 0-0.010 0h0.001c-0.536-0.018-1.166-0.028-1.798-0.028-0.109 0-0.218 0-0.327 0.001l0.017-0h-0.366v4.429h0.661c0.901 0 1.528-0.010 1.885-0.027 0.366-0.019 0.741-0.118 1.125-0.296 0.422-0.197 0.712-0.469 0.872-0.816s0.24-0.75 0.24-1.21zM18.875 19.56c0-0.648-0.131-1.154-0.395-1.52-0.262-0.365-0.656-0.64-1.181-0.829-0.318-0.122-0.758-0.187-1.322-0.197-0.6-0.019-1.306-0.029-2.014-0.029-0.078 0-0.156 0-0.233 0l0.012-0h-0.971v5.246h0.282c1.368 0 2.315-0.010 2.84-0.029 0.526-0.019 1.059-0.144 1.603-0.379 0.48-0.208 0.826-0.507 1.040-0.901 0.226-0.403 0.339-0.858 0.339-1.363z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-arrow" viewBox="0 0 32 32">
+                <path
+                    d="M22.757 12.968c-0.005-0.122-0.057-0.232-0.137-0.312l-0.68-0.68c-0.080-0.081-0.19-0.132-0.311-0.137l-0.001-0c-0.123 0.005-0.233 0.056-0.314 0.137l-5.347 5.347-5.346-5.347c-0.080-0.080-0.19-0.132-0.311-0.137l-0.001-0c-0.123 0.002-0.233 0.054-0.312 0.137l-0 0-0.681 0.68c-0.080 0.081-0.131 0.191-0.136 0.313l-0 0.001c0 0.108 0.055 0.232 0.137 0.312l6.339 6.339c0.082 0.082 0.204 0.137 0.312 0.137 0.123-0.005 0.233-0.056 0.314-0.137l6.339-6.339c0.080-0.080 0.132-0.19 0.137-0.311l0-0.001z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-attach-file" viewBox="0 0 27 32">
+                <path
+                    d="M25.62 7.023l-5.307-5.306c-0.629-0.629-1.888-1.158-2.789-1.158h-15.238c-0.902 0.002-1.632 0.733-1.632 1.635v27.212c0 0.901 0.731 1.63 1.632 1.63h22.857c0.901 0 1.632-0.73 1.632-1.63v-19.595c0-0.901-0.527-2.159-1.157-2.789zM18.068 2.874c0.29 0.102 0.579 0.254 0.698 0.373l5.323 5.324c0.119 0.119 0.273 0.407 0.375 0.696h-6.395v-6.394zM24.599 28.859h-21.769v-26.123h13.062v7.077c0 0.902 0.731 1.634 1.632 1.634h7.075v17.414zM7.183 14.165v1.090c0 0.305 0.239 0.544 0.544 0.544h11.974c0.305 0 0.544-0.238 0.544-0.544v-1.090c0-0.305-0.238-0.544-0.544-0.544h-11.976c-0.305 0-0.544 0.239-0.544 0.544zM19.701 17.975h-11.976c-0.305 0-0.544 0.239-0.544 0.546v1.088c0 0.305 0.239 0.544 0.544 0.544h11.974c0.305 0 0.544-0.238 0.544-0.544v-1.088c0-0.306-0.238-0.544-0.544-0.544zM19.701 22.33h-11.976c-0.305 0-0.544 0.238-0.544 0.544v1.088c0 0.306 0.239 0.544 0.544 0.544h11.974c0.305 0 0.544-0.238 0.544-0.544v-1.088c0-0.306-0.238-0.544-0.544-0.544z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-message" viewBox="0 0 33 32">
+                <path
+                    d="M26.14 22.608c-0.006 0.204-0.17 0.368-0.374 0.374h-17.206c-0.204-0.006-0.368-0.17-0.374-0.374v-8.976c0.246 0.28 0.514 0.538 0.807 0.771 1.671 1.286 3.354 2.595 4.979 3.951 0.876 0.736 1.964 1.636 3.179 1.636h0.023c1.216 0 2.303-0.9 3.179-1.636 1.625-1.356 3.308-2.665 4.979-3.951 0.293-0.234 0.561-0.491 0.807-0.771v8.976zM26.14 10.323c0 0.994-0.959 2.291-1.719 2.887-1.566 1.228-3.132 2.467-4.687 3.706-0.62 0.502-1.742 1.578-2.56 1.578h-0.023c-0.818 0-1.94-1.076-2.56-1.578-1.554-1.239-3.12-2.479-4.687-3.706-1.052-0.829-1.719-1.987-1.719-3.319 0-0.198 0.176-0.374 0.374-0.374h17.206c0.444 0 0.374 0.514 0.374 0.806zM27.636 9.891c-0.003-1.031-0.839-1.867-1.87-1.87h-17.206c-1.031 0.003-1.867 0.839-1.87 1.87v12.717c0.003 1.031 0.839 1.867 1.87 1.87h17.206c1.031-0.003 1.867-0.839 1.87-1.87v-12.717z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-money" viewBox="0 0 33 32">
+                <path
+                    d="M14.213 18.494v-1.122h1.496v-3.366h-0.023c-0.187 0.293-0.362 0.421-0.643 0.666l-0.9-0.935 1.73-1.601h1.332v5.236h1.496v1.122h-4.488zM20.197 15.501c0-2.127-1.286-4.862-3.74-4.862s-3.741 2.735-3.741 4.862c0 2.127 1.286 4.862 3.741 4.862s3.74-2.735 3.74-4.862zM26.182 18.494c-1.651 0.003-2.989 1.341-2.992 2.992v0h-13.465c-0.003-1.651-1.341-2.989-2.992-2.992h-0v-5.985c1.651-0.003 2.989-1.341 2.992-2.992v-0h13.465c0.003 1.651 1.341 2.989 2.992 2.992h0v5.985zM27.678 8.769c0-0.409-0.339-0.748-0.748-0.748h-20.945c-0.409 0-0.748 0.339-0.748 0.748v13.465c0 0.409 0.339 0.748 0.748 0.748h20.945c0.409 0 0.748-0.339 0.748-0.748v-13.465z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-percent" viewBox="0 0 33 32">
+                <path
+                    d="M22.276 20.488c-0.006 0.824-0.672 1.491-1.496 1.496h-0.001c-0.824-0.006-1.49-0.673-1.496-1.496v-0.001c0.006-0.824 0.672-1.49 1.495-1.496h0.001c0.824 0.006 1.49 0.672 1.496 1.495v0.001zM13.299 11.512c-0.006 0.824-0.672 1.49-1.495 1.496h-0.001c-0.824-0.006-1.49-0.672-1.496-1.495v-0.001c0.006-0.824 0.672-1.491 1.496-1.496h0.001c0.824 0.006 1.49 0.673 1.496 1.496v0.001zM25.268 20.488c-0.001-2.479-2.010-4.488-4.489-4.488h-0c-2.479 0-4.488 2.009-4.489 4.488v0c0 2.479 2.009 4.488 4.488 4.489h0c2.479-0 4.488-2.010 4.489-4.489v-0zM24.145 7.771c0-0.409-0.339-0.748-0.748-0.748h-1.87c-0.234 0-0.456 0.117-0.596 0.304l-12.343 16.457c-0.093 0.129-0.152 0.281-0.152 0.445 0 0.409 0.339 0.748 0.748 0.748h1.87c0.234 0 0.456-0.117 0.596-0.304l12.343-16.457c0.093-0.129 0.152-0.281 0.152-0.444zM16.291 11.512c-0-2.479-2.009-4.488-4.488-4.489h-0c-2.479 0-4.488 2.010-4.489 4.489v0c0.001 2.479 2.010 4.488 4.489 4.488h0c2.478-0.001 4.487-2.010 4.488-4.488v-0z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-qiwi" viewBox="0 0 34 32">
+                <path
+                    d="M27.059 21.53c0.096 0.621-0.107 0.883-0.312 0.883s-0.502-0.253-0.834-0.752c-0.331-0.501-0.445-1.058-0.285-1.344 0.062-0.098 0.157-0.17 0.269-0.201l0.003-0.001c0.037-0.011 0.080-0.017 0.125-0.017 0.079 0 0.153 0.019 0.219 0.053l-0.003-0.001c0.546 0.198 0.76 1.008 0.816 1.379zM24.038 22.89c0.656 0.536 0.856 1.173 0.509 1.621-0.203 0.234-0.501 0.382-0.833 0.382-0.017 0-0.033-0-0.049-0.001l0.002 0c-0.002 0-0.004 0-0.005 0-0.378 0-0.726-0.131-0.999-0.351l0.003 0.002c-0.592-0.502-0.768-1.32-0.379-1.782 0.157-0.174 0.384-0.284 0.636-0.284 0.021 0 0.041 0.001 0.061 0.002l-0.003-0c0.392 0.013 0.766 0.158 1.058 0.411zM22.944 28.058c2.819 0 5.878 0.936 9.266 3.84 0.338 0.288 0.789-0.072 0.494-0.432-3.328-4.064-6.413-4.84-9.475-5.493-3.754-0.803-5.686-2.848-7.040-5.091-0.266-0.446-0.387-0.368-0.411 0.208-0.003 0.097-0.004 0.211-0.004 0.325 0 0.785 0.074 1.552 0.215 2.295l-0.012-0.076h-0.456c-0.003 0-0.005 0-0.008 0-2.004 0-3.87-0.592-5.433-1.611l0.038 0.023c-1.578-1.024-2.81-2.462-3.559-4.162l-0.024-0.061c-0.467-1.061-0.739-2.297-0.739-3.597 0-0.651 0.068-1.286 0.198-1.898l-0.011 0.060c0.405-1.907 1.345-3.55 2.655-4.813l0.003-0.003c1.331-1.283 3.027-2.195 4.917-2.566l0.062-0.010c0.57-0.115 1.225-0.181 1.895-0.181 1.341 0 2.621 0.263 3.791 0.741l-0.067-0.024c1.799 0.728 3.283 1.922 4.344 3.435l0.021 0.031c1.027 1.463 1.641 3.28 1.641 5.241 0 0.38-0.023 0.755-0.068 1.123l0.004-0.044c-0.545-0.070-1.175-0.11-1.815-0.11-0.448 0-0.892 0.020-1.33 0.058l0.057-0.004c-0.371 0.032-0.317 0.208-0.040 0.246 3.206 0.56 5.426 2.48 5.93 5.984 0.002 0.019 0.010 0.035 0.022 0.048l-0-0c0.016 0.018 0.040 0.029 0.065 0.029 0.012 0 0.024-0.002 0.034-0.007l-0.001 0c0.017-0.007 0.032-0.018 0.041-0.033l0-0c1.308-2.076 2.084-4.601 2.084-7.308 0-0.587-0.036-1.165-0.107-1.733l0.007 0.068c-0.416-3.267-1.9-6.128-4.085-8.28l-0.002-0.002c-2.225-2.19-5.138-3.686-8.386-4.135l-0.078-0.009c-0.62-0.090-1.336-0.141-2.064-0.141-2.659 0-5.158 0.686-7.329 1.89l0.078-0.039c-2.8 1.544-4.986 3.908-6.267 6.766l-0.037 0.091c-0.729 1.626-1.153 3.525-1.153 5.522 0 1.291 0.177 2.541 0.509 3.727l-0.023-0.097c0.887 3.146 2.738 5.775 5.21 7.62l0.037 0.027c2.469 1.848 5.584 2.958 8.957 2.958 0.008 0 0.016 0 0.023-0h-0.001c2.149 0.006 4.288-0.4 7.426-0.4v0.003z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-search" viewBox="0 0 33 32">
+                <path
+                    d="M20.031 14.504c0 2.887-2.349 5.236-5.236 5.236s-5.236-2.349-5.236-5.236 2.349-5.236 5.236-5.236 5.236 2.349 5.236 5.236zM26.015 24.229c0-0.397-0.163-0.783-0.432-1.052l-4.009-4.009c0.907-1.301 1.449-2.916 1.449-4.657 0-0.002 0-0.005 0-0.007v0c0-4.547-3.682-8.229-8.228-8.229s-8.229 3.682-8.229 8.229c0 4.546 3.682 8.228 8.229 8.228 0.002 0 0.004 0 0.006 0 1.741 0 3.356-0.542 4.684-1.466l-0.027 0.018 4.009 3.997c0.267 0.274 0.639 0.444 1.052 0.444 0 0 0.001 0 0.001 0h-0c0.824-0.006 1.49-0.672 1.496-1.495v-0.001z"
+                ></path>
+            </symbol>
+
+            <symbol id="icon-web-money" viewBox="0 0 34 32">
+                <path
+                    d="M14.944 0c2.258 0 4.405 0.517 6.331 1.442 0.302 0.136 0.606 0.299 0.907 0.464l-1.322 1.168-1.979-2.038-3.413 2.992-2.010-2.149-6.275 5.578 4.018 4.379-1.568 1.36 3.963 4.381-1.568 1.36 5.669 6.229 3.357-3.046 2.918 3.264c-0.579 0.437-1.213 0.874-1.899 1.253-2.041 1.164-4.485 1.85-7.090 1.85-0.004 0-0.008 0-0.012 0h0.001c-7.954 0-14.419-6.392-14.419-14.254-0.029-7.81 6.438-14.23 14.39-14.23zM12.304 13.358l3.44-3.048 3.082 3.402-3.44 3.046-3.083-3.4zM14.752 19.234l3.413-3.072 3.11 3.398-3.44 3.048-3.083-3.376zM9.856 7.563l3.438-3.046 3.082 3.4-3.44 3.046-3.080-3.4zM16.155 5.931l2.56-2.286 2.312 2.531-2.56 2.312-2.312-2.557zM20.725 16.405l2.56-2.285 2.31 2.555-2.56 2.288-2.31-2.56zM22.981 21.547l2.56-2.286 2.31 2.531-2.56 2.31-2.31-2.555zM24.027 9.794l1.706-1.523 1.541 1.686-1.706 1.523-1.541-1.686zM21.824 4.76l1.706-1.549 1.542 1.712-1.707 1.525-1.541-1.688zM26.198 14.827l1.707-1.523 1.568 1.686-1.733 1.523-1.541-1.686zM18.522 11.045l2.56-2.285 2.31 2.53-2.558 2.286-2.312-2.531z"
+                ></path>
+            </symbol>
+        </svg>
+        <header>
+            <div class="header">
+                <div class="head__content">
+                    <div class="header__top">
+                        <div class="header__top-wrap">
+                            <img
+                                loading="lazy"
+                                class="logo"
+                                src="src/assets/img/icons/logo.svg"
+                                alt=""
+                            />
+                            <div class="menu">
+                                <input
+                                    type="checkbox"
+                                    id="burger-checkbox"
+                                    class="menu__checkbox"
+                                />
+                                <label
+                                    for="burger-checkbox"
+                                    class="menu__burger"
+                                ></label>
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="##">Бизнес</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="##">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="##">Цены</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#order">Оформить заказ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav class="navigation">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a href="##">Бизнес</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="##">О нас</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="##">Цены</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#order">Оформить заказ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="header__content">
+                        <h1>
+                            <span>Lorem ipsum</span> dolor sit
+                            amet&nbsp;consectetur
+                            <span>adipiscing</span>
+                        </h1>
+                        <div class="header__text">
+                            <div class="header__text-title">
+                                At vero eos et accusamus et iusto odio
+                                dignissimos ducimus!
+                            </div>
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    Totam rem aperiam eaque ipsa
+                                </li>
+                                <li class="header__item">
+                                    Sit voluptatem accusantium doloremque
+                                    laudantium
+                                </li>
+                                <li class="header__item">
+                                    Sed ut perspiciatis, unde omnis iste natus
+                                    error
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__btns">
+                            <button class="btn">Заказать</button>
+                            <button class="btn btn--white">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="order" class="order">
+                <h2>Оформление <span>заказа</span></h2>
+                <div class="order__desc">
+                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                </div>
+                <div class="order__steps">
+                    <div class="order__step">
+                        <div class="order__icon">
+                            <svg class="icon icon--order">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </div>
+                        <div class="order__text">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="order__step">
+                        <div class="order__icon">
+                            <svg class="icon icon--order">
+                                <use xlink:href="#icon-percent"></use>
+                            </svg>
+                        </div>
+                        <div class="order__text">
+                            Сonsecteturadipiscing elit
+                        </div>
+                    </div>
+                    <div class="order__step">
+                        <div class="order__icon">
+                            <img
+                                class="icon--order"
+                                loading="lazy"
+                                src="src/assets/img/icons/file.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="order__text">Sed do eiusmod tempor</div>
+                    </div>
+                    <div class="order__step">
+                        <div class="order__icon">
+                            <svg class="icon icon--order">
+                                <use xlink:href="#icon-message"></use>
+                            </svg>
+                        </div>
+                        <div class="order__text">
+                            Esse cillum dolore eu fugiat
+                        </div>
+                    </div>
+                    <div class="order__step">
+                        <div class="order__icon">
+                            <svg class="icon icon--order">
+                                <use xlink:href="#icon-money"></use>
+                            </svg>
+                        </div>
+                        <div class="order__text">
+                            Excepteur sint occaecat cupidatat non proident
+                        </div>
+                    </div>
+                </div>
+
+                <form class="order__form">
+                    <div class="order__inputs">
+                        <div class="select-container">
+                            <div class="select">
+                                <div class="select__header">
+                                    <span class="select__placeholder"
+                                        >Выберите тип системы</span
+                                    >
+                                    <svg class="icon icon--arrow select__arrow">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="select__options">
+                                    <div class="select__option">
+                                        Sed ut perspiciatis
+                                    </div>
+                                    <div class="select__option">
+                                        Nemo enim ipsam
+                                    </div>
+                                    <div class="select__option">
+                                        Et harum quidem
+                                    </div>
+                                    <div class="select__option">
+                                        Temporibus autem
+                                    </div>
+                                    <div class="select__option">
+                                        Itaque earum rerum
+                                    </div>
+                                    <div class="select__option">
+                                        Sed ut perspiciatis
+                                    </div>
+                                    <div class="select__option">
+                                        Nemo enim ipsam
+                                    </div>
+                                    <div class="select__option">
+                                        Et harum quidem
+                                    </div>
+                                    <div class="select__option">
+                                        Temporibus autem
+                                    </div>
+                                    <div class="select__option">
+                                        Itaque earum rerum
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Ваш e-mail"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Ваше имя"
+                            required
+                        />
+                    </div>
+                    <div class="order__inputs">
+                        <div class="range" style="--value: 75">
+                            <label class="range__label" for="tailmetr">
+                                Sed ut perspiciatis, unde omnis iste natus
+                            </label>
+                            <div class="range__track"></div>
+                            <div class="range__thumbs">
+                                <input
+                                    class="range__input"
+                                    id="tailmetr"
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="75"
+                                    step="1"
+                                />
+                                <output
+                                    class="range__output"
+                                    id="output"
+                                    or="tailmetr"
+                                >
+                                    75
+                                </output>
+                            </div>
+                        </div>
+
+                        <div class="attach-file">
+                            <input
+                                name="file"
+                                type="file"
+                                id="input__file"
+                                class="input attach-file__input"
+                                multiple
+                            />
+                            <label
+                                for="input__file"
+                                class="attach-file__input-button"
+                            >
+                                <svg class="icon icon--attach-file">
+                                    <use xlink:href="#icon-attach-file"></use>
+                                </svg>
+
+                                <span class="attach-file__input-button-text"
+                                    >Прикрепить файл</span
+                                >
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="copyrigth">
+                    © 2018 «LOREMIPSUM.NET» Все права защищены.
+                </div>
+                <div class="separator"></div>
+                <div class="footer__items footer__items--center">
+                    <div class="footer__item">
+                        <svg class="icon icon--footer">
+                            <use xlink:href="#icon-qiwi"></use>
+                        </svg>
+
+                        <span class="footer__text">Qiwi wallet</span>
+                    </div>
+                    <div class="footer__item">
+                        <img
+                            class="icon--footer"
+                            loading="lazy"
+                            src="src/assets/img/icons/yandex-money.svg"
+                            alt=""
+                        />
+
+                        <span class="footer__text">Yandex Money</span>
+                    </div>
+
+                    <div class="footer__item">
+                        <svg class="icon icon--footer">
+                            <use xlink:href="#icon-web-money"></use>
+                        </svg>
+
+                        <span class="footer__text">Web Money</span>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="footer__items">
+                    <a
+                        href="mailto:info@ipsum228.com"
+                        target="_blank"
+                        class="footer__item"
+                    >
+                        <svg class="icon icon--footer">
+                            <use xlink:href="#icon-email"></use>
+                        </svg>
+
+                        <span class="footer__text">info@ipsum228.com</span>
+                    </a>
+                    <a
+                        href="https://m.vk.com/"
+                        target="_blank"
+                        class="footer__item"
+                    >
+                        <svg class="icon icon--footer">
+                            <use xlink:href="#icon-vk"></use>
+                        </svg>
+
+                        <span class="footer__text">Мы вконтакте</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
